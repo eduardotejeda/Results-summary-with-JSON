@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+/* outline: solid 1px red; */
+}
+
+
+@media (max-width: 375px) {
+
+  html body {
+    height: 37vh;
+  }
+
+  html body main {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  html body main div.result {
+    position: inherit;
+    width: auto;   
+    
+  }
+  
+  html body main div.summary {
+    position: inherit;
+    transform: none;
+    width: 100%;
+    
+  }
+
+  html body main div.summary ul#data-output {
+    grid-auto-rows: 40px;
+    text-align: start;
+    top: 10%;
+  }
+
+  .summary > button:nth-child(3) {
+    height: 14%;
+    border-radius: 30px;
+    font-size: 19px;
+    
+  }
+
+  
+  
+   html body main div.summary ul#data-output li span#category0.text {
+    position: relative;
+    top: 10%;    
+    margin-right: 144px;
+    
+  }
+
+  html body main div.summary ul#data-output li span#category20.text {
+    position: relative;
+    top: 10%;    
+    margin-right: 144px;
+  }
+
+  html body main div.summary ul#data-output li span#category43.text {
+
+    position: relative;
+    top: 10%;    
+    margin-right: 144px;
+
+  }
+
+  html body main div.summary ul#data-output li span#category58.text {
+
+    position: relative;
+    top: 10%;    
+    margin-right: 144px;
+
+  }
+
+  
+
+  html body main div.summary ul#data-output li span {
+    position: relative;
+    top: 10%;
+  }
+
+  
+
+  
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+    }
+
+    li {
+        list-style-type: none;
+        
+      }
+
+      h1, h2 {
+        display: grid;
+        place-self: center;
+      }
+
+    main {
+        position: relative;
+        z-index: 1;
+        background-color: hsl(0, 0%, 100%);
+        height: 320px;
+        width: 400px;
+        border-radius: 15px;
+        box-shadow: lightgray 15px 10px 25px;
+      }
+      
+    .result {
+        height: 320px;
+        width: 200px;
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+        border-radius: 15px;   
+        display: grid;  
+        /* grid-template-rows: 40px 8rem auto 30%; */             
+        
+            
+      }
+
+      .result > div:nth-child(4){
+        text-align: center;
+
+      }
+
+    #circle {
+        
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        place-self: center;
+    }
+      
+
+
+    .summary {
+        height: 320px;
+        width: 200px;
+        position: absolute;
+        z-index: 2;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        transform: translate(100%, -0%); 
+        padding: 19px 15px 0px 15px
+       
+       
+      }
+
+      .summary > div:nth-child(1) {
+        padding-bottom: 29px;
+        color: rgb(72, 69, 69);
+        font-weight: 600;
+      }
+
+      html body main div.result div#circle span#scoreSum {
+        font-weight: 800;
+        font-size: 50px;
+        padding-top: 10px;
+      }
+
+      #scoreSum, .result > h1:nth-child(3) {
+        color: hsl(0, 0%, 100%);
+        
+      }
+
+      #circle > p:nth-child(2) {
+        color: hsl(224, 30%, 70%);
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 18px;
+      }
+
+      .result > div:nth-child(4), .result > h2:nth-child(1) {
+        color: hsl(241, 100%, 89%);
+      }
+
+      .result > h2:nth-child(1) {
+        font-size: 19px;
+        padding-top: 10px;
+      }
+
+      .result > h1:nth-child(3) {
+        font-size: 20pxvw;
+      }
+
+      .result > div:nth-child(4) {
+        font-size: 11px;
+        padding: 0px 20px 0px 20px;
+      }
+
+      
+      #data-output > li:nth-child(1) {
+        background-color: rgb(255, 246, 245);
+        border-radius: 8px;
+      }
+      
+      #data-output > li:nth-child(2) {
+        background-color: rgb(255, 251, 242);
+        border-radius: 8px;
+      }
+      #data-output > li:nth-child(3) {
+        background-color: rgb(242, 251, 250);
+        border-radius: 8px;        
+        align-content: center;
+      }
+
+      #data-output > li:nth-child(4) {
+        background-color: rgb(243, 243, 243);
+        border-radius: 8px;
+        
+                
+        
+      }
+
+      #data-output > li:nth-child(1) > img:nth-child(1) {
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+
+      }
+
+      #data-output > li:nth-child(2) > img:nth-child(1) {
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+
+      }
+
+      #data-output > li:nth-child(3) > img:nth-child(1) {
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+
+      }
+
+      #data-output > li:nth-child(4) > img:nth-child(1) {
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+
+      }
+
+      #data-output {
+
+        display: grid;
+        grid-auto-rows: 30px;
+        grid-gap: 0.75rem;
+        text-align-last: justify;     
+        
+        
+
+      }
+
+      html body main div.summary ul#data-output li span#category0 {
+        color: hsl(0, 100%, 67%);
+      }
+
+      html body main div.summary ul#data-output li span#category20 {
+        color: hsl(39, 100%, 56%);
+      }
+      html body main div.summary ul#data-output li span#category43 {
+        color: hsl(166, 100%, 37%);
+      }
+      html body main div.summary ul#data-output li span#category58 {
+        color: hsl(234, 85%, 45%);
+      }
+
+      .text {
+        font-size: small;
+        
+      }
+
+      #data-output > li:nth-child(4) > span:nth-child(3) {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      #data-output > li:nth-child(3) > span:nth-child(3) {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      #data-output > li:nth-child(2) > span:nth-child(3) {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      #data-output > li:nth-child(1) > span:nth-child(3) {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      html body main div.summary button
+      {
+        border-radius: 15px;
+        min-height: 10%;
+        min-width: 80%;
+        position: relative;
+        top: 16%;
+        transform: translateY(-50%);
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 800;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(224, 30%, 27%);
+        border: none;
+        width: 100%;
+        height: 10%;
+      }
+      
+      html body main div.summary button:hover
+      {
+        cursor: pointer;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+
+      }
+
+
+
+      html body main div.summary ul#data-output li span span {
+        color: hsl(224, 30%, 70%);
+        font-size: 600;               
+        
+      }
+
+      html body main div.summary ul#data-output li span {
+        display: inline-flex;
+        justify-content: end;
+      }
+
+html body main div.summary ul#data-output li span#category0.text {
+  transform: translateX(-10px);      
+        
+              }
+
+html body main div.summary ul#data-output li span#category20.text {
+  transform: translateX(-10px); 
+}
+      
+html body main div.summary ul#data-output li span#category43.text {
+   transform: translateX(-20px); 
+}
+
+html body main div.summary ul#data-output li span#category58.text {
+  transform: translateX(-20px); 
+}
+
+html body main div.summary ul#data-output li span b {
+  margin-right: 5px;
+}
