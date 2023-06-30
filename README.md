@@ -4,8 +4,8 @@ This site was made using basic JavaScript fetching the data from a JSON file and
 
 ## PC  👋
 
-
+![PC version](https://github.com/eduardotejeda/Results-summary-with-JSON/blob/main/PC%20version.jpg)
 
 ## Mobile
 
-
+![Mobile version](https://github.com/eduardotejeda/Results-summary-with-JSON/blob/main/Mobile.png)
